@@ -2,7 +2,7 @@
 /**
  *
  * This file is part of the "FS17 Webstats" package.
- * Copyright (C) 2017  John Hawk <john.hawk@gmx.net>
+ * Copyright (C) 2017-2018 John Hawk <john.hawk@gmx.net>
  *
  * "FS17 Webstats" is free software: you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as published
@@ -67,5 +67,6 @@ if (! $options ['storage'] ['sortByName']) {
 }
 
 $smarty->assign ( 'commodities', $commodities );
+$smarty->assign ( 'plants', $plants );
 $smarty->assign ( 'outOfMap', $outOfMap );
 $smarty->assign ( 'options', $options ['storage'] );

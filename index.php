@@ -1,7 +1,7 @@
 <?php
 /**
  * This file is part of the "FS17 Webstats" package.
- * Copyright (C) 2017 John Hawk <john.hawk@gmx.net>
+ * Copyright (C) 2017-2018 John Hawk <john.hawk@gmx.net>
  *
  * "FS17 Webstats" is free software: you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as published
@@ -42,7 +42,7 @@ include ('./include/coockie.php');
 $style = $options ['general'] ['style'];
 
 $smarty = new Smarty ();
-$smarty->debugging = false;
+$smarty->debugging = true;
 $smarty->caching = false;
 $smarty->setTemplateDir ( "./styles/$style/templates" );
 $smarty->assign ( 'webStatsVersion', 'Version 1.4.0 (alpha)' );
