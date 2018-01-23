@@ -2,7 +2,7 @@
 /**
  *
  * This file is part of the "FS17 Webstats" package.
- * Copyright (C) 2017-2018 John Hawk <john.hawk@gmx.net>
+ * Copyright (C) 2017  John Hawk <john.hawk@gmx.net>
  *
  * "FS17 Webstats" is free software: you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as published
@@ -19,7 +19,7 @@
  *
  */
 setlocale ( LC_ALL, "en_US.UTF-8" );
-$xmlStr = file_get_contents ( './map01_nfm4f13.i3d' );
+$xmlStr = file_get_contents ( './map01_29.i3d' );
 $xml = simplexml_load_string ( $xmlStr );
 $i = 0;
 $produktion = $AttributeNodes = array ();

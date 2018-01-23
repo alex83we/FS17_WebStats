@@ -2,7 +2,7 @@
 /**
  *
  * This file is part of the "FS17 Webstats" package.
- * Copyright (C) 2017-2018 John Hawk <john.hawk@gmx.net>
+ * Copyright (C) 2017  John Hawk <john.hawk@gmx.net>
  *
  * "FS17 Webstats" is free software: you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as published
@@ -18,18 +18,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-if (! defined('IN_NFMWS') && ! defined('IN_INSTALL')) {
-    exit();
+
+if (! defined ( 'IN_NFMWS' ) && ! defined ( 'IN_INSTALL' )) {
+	exit ();
 }
 
-$animalPlants = array(
-    "Animals_sheep",
-    "Animals_pig",
-    "Animals_cow"
+$animalPlants = array (
+		"Animals_sheep",
+		"Animals_pig",
+		"Animals_cow" 
 );
-foreach ($animalPlants as $key => $animalPlant) {
-    $animalPlants[$key] = translate($animalPlant);
+foreach ( $animalPlants as $key => $animalPlant ) {
+	$animalPlants [$key] = translate ( $animalPlant );
 }
-$smarty->assign('animalPlants', $animalPlants);
-$smarty->assign('animalPallets', $animalPallets);
-$smarty->assign('plants', $plants);
+$smarty->assign ( 'animalPlants', $animalPlants );
+$smarty->assign ( 'plants', $plants );

@@ -18,7 +18,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-$mapVersion = 'Sosnovka';
+$mapVersion = 'Goldcres Valley';
 
 if (empty ( $mapconfig ) || ! is_array ( $mapconfig )) {
 	$mapconfig = array ();
@@ -27,12 +27,24 @@ if (empty ( $mapconfig ) || ! is_array ( $mapconfig )) {
 $mapconfig = array_merge ( $mapconfig, array (
 		'Storage_storage1' => array (
 				'locationType' => 'storage',
-				'position' => '382 0 -236'
+				'position' => '189 0 109'
+		),
+		'Storage_storage2' => array (
+				'locationType' => 'storage',
+				'position' => '329 0 -576'
+		),
+		'Storage_storage3' => array (
+				'locationType' => 'storage',
+				'position' => '-224 0 -151'
+		),
+		'Storage_storage4' => array (
+				'locationType' => 'storage',
+				'position' => '-587 0 129'
 		),
 		'Bga' => array (
 				'locationType' => 'bga',
 				'ProdPerHour' => 1000,
-				'position' => '-646 0 -299',
+				'position' => '-74 0 -504',
 				'showInProduction' => true,
 				'input' => array (
 						'silage' => array (
@@ -57,49 +69,33 @@ $mapconfig = array_merge ( $mapconfig, array (
 						) 
 				) 
 		),
-		'BunkerSilo_silo1' => array (
+		'BunkerSilo_silo001' => array (
 				'locationType' => 'bunker',
-				'position' => '428.9 0 -281.7'
+				'position' => '-45 0 -548'
 		),
-		'BunkerSilo_silo2' => array (
+		'BunkerSilo_silo002' => array (
 				'locationType' => 'bunker',
-				'position' => '279.0 0 843.7'
+				'position' => '-35 0 -548'
 		),
-		'BunkerSilo_silo3' => array (
+		'BunkerSilo_silo003' => array (
 				'locationType' => 'bunker',
-				'position' => '-641 0 -251'
+				'position' => '-25 0 -548'
 		),
-		'BunkerSilo_silo4' => array (
+		'BunkerSilo_silo004' => array (
 				'locationType' => 'bunker',
-				'position' => '-651 0 -251'
+				'position' => '-55 0 -548'
 		),
-		'BunkerSilo_silo5' => array (
+		'BunkerSilo_silo005' => array (
 				'locationType' => 'bunker',
-				'position' => '-661 0 -251'
+				'position' => '-65 0 -548'
 		),
-		'BunkerSilo_silo6' => array (
+		'BunkerSilo_cowSilo' => array (
 				'locationType' => 'bunker',
-				'position' => '-631 0 -251'
-		),
-		'BunkerSilo_silo7' => array (
-				'locationType' => 'bunker',
-				'position' => '-621 0 -251'
-		),
-		'BunkerSilo_silo8' => array (
-				'locationType' => 'bunker',
-				'position' => '-255.5 0 -794.0'
-		),
-		'BunkerSilo_silo9' => array (
-				'locationType' => 'bunker',
-				'position' => '-445.3 0 234.5'
-		),
-		'BunkerSilo_silo10' => array (
-				'locationType' => 'bunker',
-				'position' => '674.3 0 310.8'
+				'position' => '-506 0 668'
 		),
 		'Animals_cow' => array (
 				'locationType' => 'animal',
-				'position' => '464 0 -318',
+				'position' => '-556 0 640',
 				'reproRate' => 1200,
 				'input' => array (
 						'water' => array (
@@ -160,7 +156,7 @@ $mapconfig = array_merge ( $mapconfig, array (
 		),
 		'Animals_pig' => array (
 				'locationType' => 'animal',
-				'position' => '-476.5 0 -303.5',
+				'position' => '165.5 0 -463',
 				'reproRate' => 144,
 				'input' => array (
 						'water' => array (
@@ -222,7 +218,7 @@ $mapconfig = array_merge ( $mapconfig, array (
 		),
 		'Animals_sheep' => array (
 				'locationType' => 'animal',
-				'position' => '221 0 891',
+				'position' => '-374 0 -175',
 				'reproRate' => 960,
 				'input' => array (
 						'water' => array (
@@ -244,7 +240,7 @@ $mapconfig = array_merge ( $mapconfig, array (
 								'capacity' => 2000,
 								'fillType' => 'woolPallet',
 								'palettArea' => '-379.6 -190.1 -377.4 -185.9',
-								'palettPlaces' => 15,
+								'palettPlaces' => 6,
 								'showInStorage' => false 
 						) 
 				),
